@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesamiento de Imagenes</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <section class="container">
+        <header class="header">
+            <ul class="nav">
+                <li><span>Menú</span>
+                    <ul>           
+                        <li><label for="files" > Abrir archivo</label></li>
+                        <li><span id="op-bilineal">T. Bilineal</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section class="img-container1">
+            <div class="item img-item">
+                <canvas id="img1" width="930" height="750" crossorigin="anonymous"> </canvas>
+            </div>
+            <div id="item">
+                <a href="" id="color"> </a> <output id="rgb">RGB:</output>
+            </div>
+            <div class="item">
+                <input type="file" id="files" name="files" />
+            </div>
+            <div class="item">
+                <output id="list"></output>
+            </div>
+        </section> 
+        <section class="img-container2">
+            <div class="item img-item">
+                <canvas id="img2" width="930" height="750"> </canvas>
+            </div>
+            <!-- <div class="item">
+                <button id="gris">Convertir a gris</button>
+            </div> -->
+        </section>
+    </section>
+    <!-- <script src="dist/src/index.js"  type="module"> -->
+    <script src="dist/bundle.js" >
+    </script>
+</body>
+</html>
+
+ 
